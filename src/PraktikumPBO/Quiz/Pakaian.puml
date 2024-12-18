@@ -1,0 +1,25 @@
+@startuml Pakaian
+package PraktikumPBO.Quiz {
+    class Pakaian {
+        - nama : String
+        - stok : int
+        - hargaSatuan : int
+        - hargaTotal : int
+
+        + setNama(nama : String) : void
+        + setStok(stok : int) : void
+        + setHargaSatuan(hargaSatuan : int) : void
+        + getNama() : String
+        + getStok() : int
+        + getHargaSatuan() : int
+        + getHargaTotal() : int
+        + tampilkanInfo() : void
+    }
+
+    class MainPakaian {
+        + main(args : String[]) : void
+    }
+
+    MainPakaian --> Pakaian : "membuat objek"
+}
+@enduml

@@ -1,0 +1,26 @@
+@startuml bentuk lingkaran
+
+interface Cetak {
+    +cetak(): void
+}
+
+abstract class Bentuk {
+    +hitungLuas(): double
+}
+
+class Lingkaran {
+    -jariJari: double
+    +Lingkaran(jariJari: double)
+    +hitungLuas(): double
+    +cetak(): void
+    +cetakPesanUtilitas(): static void
+}
+
+Bentuk <|-- Lingkaran
+Cetak <|.. Lingkaran
+
+class Utama {
+    +main(args: String[]): void
+}
+
+@enduml

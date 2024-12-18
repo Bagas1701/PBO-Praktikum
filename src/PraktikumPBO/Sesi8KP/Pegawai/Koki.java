@@ -1,0 +1,16 @@
+package PraktikumPBO.Sesi8KP.Pegawai;
+
+public class Koki extends Pegawai {
+    @Override
+
+    public void menampilkan(){
+        System.out.println("Nama : "+nama);
+        System.out.println("Ide_Pegawai : "+id_pegawai);
+        System.out.println("Gaji: "+gaji);
+    }
+
+    public void tugas() {
+        System.out.println("Tugas : Memasak makanan dan Membuat minuman");
+        System.out.println("-------------------------------------------------");
+    }   
+}
